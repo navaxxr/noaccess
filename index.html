@@ -1,7 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Перед тем как написать</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 40px 20px;
+  background:
+    radial-gradient(ellipse at 15% 20%, #29251d 0%, transparent 35%),
+    radial-gradient(ellipse at 85% 75%, #1d2021 0%, transparent 40%),
+    #0b0b0b;
+  color: #e9e3d8;
+  font-family: Georgia, serif;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "♠  CAT  PUBG  ♠  CAT  PUBG  ♠";
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(190, 164, 119, 0.035);
+  font: bold clamp(30px, 8vw, 85px) Arial;
+  letter-spacing: 12px;
+  transform: rotate(-28deg);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.container {
+  position: relative;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin: 65px 0 70px;
+}
+
+.eyebrow {
+  color: #bba47b;
+  font: 10px Arial, sans-serif;
+  letter-spacing: 5px;
+}
+
+h1 {
+  margin: 25px 0 15px;
+  font-size: clamp(32px, 8vw, 52px);
+  font-weight: normal;
+}
+
+.subtitle {
+  color: #77736c;
+  font: 10px Arial, sans-serif;
+  letter-spacing: 2px;
+  line-height: 2;
+}
+
+.rule {
+  position: relative;
+  margin: 22px 0;
+  padding: 25px 28px;
+  background: rgba(24, 24, 22, 0.82);
+  border: 1px solid rgba(187, 164, 123, 0.18);
+  transition: 0.3s;
+}
+
+.rule:hover {
+  border-color: #bba47b;
+  transform: translateY(-3px);
+}
+
+.number {
+  color: #bba47b;
+  font: 10px Arial, sans-serif;
+  letter-spacing: 3px;
+}
+
+h2 {
+  margin: 13px 0;
+  font-size: 23px;
+  font-weight: normal;
+}
+
+.rule p {
+  color: #aaa59c;
+  font: 13px/1.9 Arial, sans-serif;
+}
+
+.telegram {
+  display: inline-block;
+  margin-top: 35px;
+  padding: 17px 30px;
+  border: 1px solid #bba47b;
+  color: #bba47b;
+  text-decoration: none;
+  font: 10px Arial, sans-serif;
+  letter-spacing: 3px;
+  transition: 0.3s;
+}
+
+.telegram:hover {
+  background: #bba47b;
+  color: #101010;
+}
+
+footer {
+  margin-top: 65px;
+  padding: 25px 0;
+  border-top: 1px solid #39342c;
+  color: #bba47b;
+  text-align: center;
+  font: 10px Arial, sans-serif;
+  letter-spacing: 3px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.decor {
+  position: fixed;
+  color: rgba(187, 164, 123, 0.09);
+  font-size: 95px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.cat { top: 15%; left: 3%; }
+.helmet { bottom: 12%; right: 2%; }
+
+</style>
+</head>
+
+<body>
+
+<div class="decor cat">♧</div>
+<div class="decor helmet">♜</div>
+
+<main class="container">
+
 <header>
   <div class="eyebrow">ЛИЧНЫЕ ПРАВИЛА</div>
   <h1>Перед тем как написать</h1>
-  <div class="subtitle">Несколько вещей, которые тебе стоит знать</div>
+  <div class="subtitle">НЕСКОЛЬКО ВЕЩЕЙ, КОТОРЫЕ ТЕБЕ СТОИТ ЗНАТЬ</div>
 </header>
 
 <section class="rule">
@@ -28,6 +178,16 @@
   <p>Не нужно отправлять десять сообщений подряд, если я не ответила на первое. Я отвечаю тогда, когда считаю нужным.</p>
 </section>
 
+<div class="contact">
+  <a class="telegram" href="https://t.me/kittyfromgithub" target="_blank">
+    НАПИСАТЬ МНЕ В TELEGRAM ↗
+  </a>
+</div>
+
 <footer>
   УВАЖАЙ МОИ ГРАНИЦЫ
 </footer>
+
+</main>
+</body>
+</html>
