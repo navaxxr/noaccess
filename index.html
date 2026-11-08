@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Перед тем как написать</title>
+<title>Перед тем как написать | NAVA</title>
 
 <style>
 * { box-sizing: border-box; }
@@ -11,27 +11,28 @@
 body {
   margin: 0;
   padding: 40px 20px;
+  min-height: 100vh;
   background:
-    radial-gradient(ellipse at 15% 20%, #29251d 0%, transparent 35%),
-    radial-gradient(ellipse at 85% 75%, #1d2021 0%, transparent 40%),
-    #0b0b0b;
+    linear-gradient(rgba(8,10,9,.82), rgba(8,10,9,.94)),
+    radial-gradient(ellipse at 80% 20%, #51513d 0%, transparent 35%),
+    radial-gradient(ellipse at 15% 80%, #303a32 0%, transparent 35%),
+    #090b09;
   color: #e9e3d8;
   font-family: Georgia, serif;
   overflow-x: hidden;
+  position: relative;
 }
 
+/* Атмосфера военного пейзажа */
 body::before {
-  content: "♠  CAT  PUBG  ♠  CAT  PUBG  ♠";
+  content: "";
   position: fixed;
   inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(190, 164, 119, 0.035);
-  font: bold clamp(30px, 8vw, 85px) Arial;
-  letter-spacing: 12px;
-  transform: rotate(-28deg);
   pointer-events: none;
+  opacity: .2;
+  background:
+    linear-gradient(115deg, transparent 45%, rgba(150,145,112,.12) 46%, transparent 48%),
+    radial-gradient(ellipse at 75% 80%, rgba(130,130,105,.16), transparent 45%);
   z-index: -1;
 }
 
@@ -59,7 +60,7 @@ h1 {
 }
 
 .subtitle {
-  color: #77736c;
+  color: #88877d;
   font: 10px Arial, sans-serif;
   letter-spacing: 2px;
   line-height: 2;
@@ -69,9 +70,9 @@ h1 {
   position: relative;
   margin: 22px 0;
   padding: 25px 28px;
-  background: rgba(24, 24, 22, 0.82);
-  border: 1px solid rgba(187, 164, 123, 0.18);
-  transition: 0.3s;
+  background: rgba(17, 20, 17, .88);
+  border: 1px solid rgba(187, 164, 123, .2);
+  transition: .3s;
 }
 
 .rule:hover {
@@ -92,8 +93,12 @@ h2 {
 }
 
 .rule p {
-  color: #aaa59c;
+  color: #aaa99f;
   font: 13px/1.9 Arial, sans-serif;
+}
+
+.contact {
+  text-align: center;
 }
 
 .telegram {
@@ -105,7 +110,7 @@ h2 {
   text-decoration: none;
   font: 10px Arial, sans-serif;
   letter-spacing: 3px;
-  transition: 0.3s;
+  transition: .3s;
 }
 
 .telegram:hover {
@@ -114,37 +119,37 @@ h2 {
 }
 
 footer {
+  position: relative;
   margin-top: 65px;
   padding: 25px 0;
-  border-top: 1px solid #39342c;
+  border-top: 1px solid #393b32;
   color: #bba47b;
   text-align: center;
   font: 10px Arial, sans-serif;
   letter-spacing: 3px;
 }
 
-.contact {
-  text-align: center;
-}
-
-.decor {
+.signature {
   position: fixed;
-  color: rgba(187, 164, 123, 0.09);
-  font-size: 95px;
+  bottom: 18px;
+  right: 20px;
+  color: rgba(187,164,123,.55);
+  font: 9px Arial, sans-serif;
+  letter-spacing: 4px;
   pointer-events: none;
-  z-index: -1;
 }
 
-.cat { top: 15%; left: 3%; }
-.helmet { bottom: 12%; right: 2%; }
-
+@media (max-width: 480px) {
+  body { padding: 20px 15px; }
+  header { margin: 55px 0; }
+  .rule { padding: 22px 19px; }
+}
 </style>
 </head>
 
 <body>
 
-<div class="decor cat">♧</div>
-<div class="decor helmet">♜</div>
+<div class="signature">NAVA</div>
 
 <main class="container">
 
